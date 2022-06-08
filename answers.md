@@ -1,8 +1,9 @@
 # Big O Answers
 
 ## Snippet 1 -
-### Big O:
-### Explanation:
+### Big O: O(n)
+### Explanation: it is only as fast as is the length of the array
+
 ```python
 def largest(array, value):
   for item in array:
@@ -13,8 +14,8 @@ def largest(array, value):
 
 
 ## Snippet 2 -
-### Big O:
-### Explanation:
+### Big O: O(n)
+### Explanation: although there are 2 for-loops, it could be written as O(2n), but we are not concerned with how many O(n)'s there are, just that it is O(n)
 
 ```python
 def info_dump(customers):
@@ -30,8 +31,8 @@ def info_dump(customers):
 ```
 
 ## Snippet 3 -
-### Big O:
-### Explanation:
+### Big O: O(1)
+### Explanation: this function is essentially returning the value of a single variable, so time is constant
 
 ```python
 def first_element_is_red(array):
@@ -39,8 +40,8 @@ def first_element_is_red(array):
 ```
 
 ## Snippet 4 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: since there is a nested for loop, it could be considered O(n) * O(n) == O(n^2)
 
 ```python
 def duplicates(array):
@@ -54,8 +55,8 @@ def duplicates(array):
 ``` 
 
 ## Snippet 5 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: since there is a nested for loop, it could be considered O(n) * O(n) == O(n^2)
 
 ```python
 words = ['chocolate', 'coconut', 'rainbow']
@@ -68,8 +69,8 @@ for word in words:
 ```
 
 ## Snippet 6 -
-### Big O:
-### Explanation:
+### Big O: O(n)
+### Explanation: the time is linear to the length of the array passed
 
 ```python
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -81,8 +82,8 @@ def print_array(array):
 ```
 
 ## Snippet 7 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: since we are finding the worst case scenario, this would run quadratically since there is a nested loop
 
 ```python
 # this is insertion sort
@@ -97,8 +98,8 @@ def insertionSort(arr):
 ```
 
 ## Snippet 8 -
-### Big O:
-### Explanation:
+### Big O: O(n^2)
+### Explanation: nested loop
 
 ```python
 for i in range(len(my_list)):
